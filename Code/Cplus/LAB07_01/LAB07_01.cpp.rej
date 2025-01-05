@@ -1,0 +1,40 @@
+diff a/Code/Cplus/LAB07_01/LAB07_01.cpp b/Code/Cplus/LAB07_01/LAB07_01.cpp	(rejected hunks)
+@@ -1,30 +1,30 @@
+ #include <iostream>
+ using namespace std;
+ 
+-// ¿Ñ§¡ìªÑ¹ÊÓËÃÑºÊÅÑº¤èÒ¢Í§µÑÇá»ÃÊÍ§µÑÇâ´Âãªé¾ÍÂ¹ìàµÍÃì
++// �ѧ��ѹ����Ѻ��Ѻ��Ңͧ������ͧ��������¹�����
+ void swapValues(int* a, int* b) {
+-    int temp = *a;  // à¡çº¤èÒ¢Í§µÑÇá»Ã a äÇéã¹µÑÇá»ÃªÑèÇ¤ÃÒÇ
+-    *a = *b;        // à»ÅÕèÂ¹¤èÒ¢Í§ a ãËéà·èÒ¡Ñº¤èÒ¢Í§ b
+-    *b = temp;      // à»ÅÕèÂ¹¤èÒ¢Í§ b ãËéà·èÒ¡Ñº¤èÒªÑèÇ¤ÃÒÇ
++    int temp = *a;  // �纤�Ңͧ����� a ���㹵���ê��Ǥ���
++    *a = *b;        // ����¹��Ңͧ a �����ҡѺ��Ңͧ b
++    *b = temp;      // ����¹��Ңͧ b �����ҡѺ��Ҫ��Ǥ���
+ }
+ 
+ int main() {
+     int x, y;
+ 
+-    // ÃÑº¤èÒ¨Ò¡¼Ùéãªé
++    // �Ѻ��Ҩҡ�����
+     cout << "Enter value for x: ";
+     cin >> x;
+     cout << "Enter value for y: ";
+     cin >> y;
+ 
+-    // áÊ´§¤èÒ¡èÍ¹¡ÒÃÊÅÑº
++    // �ʴ���ҡ�͹�����Ѻ
+     cout << "\nBefore swapping:" << endl;
+     cout << "x = " << x << ", y = " << y << endl;
+ 
+-    // àÃÕÂ¡¿Ñ§¡ìªÑ¹à¾×èÍÊÅÑº¤èÒ
++    // ���¡�ѧ��ѹ������Ѻ���
+     swapValues(&x, &y);
+ 
+-    // áÊ´§¤èÒËÅÑ§¡ÒÃÊÅÑº
++    // �ʴ������ѧ�����Ѻ
+     cout << "\nAfter swapping:" << endl;
+     cout << "x = " << x << ", y = " << y << endl;
+ 
